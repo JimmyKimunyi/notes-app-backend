@@ -44,7 +44,6 @@ app.use(morgan(" :method :url :status :response-time ms - :postData"));
 app.get("/api/notes", (req, res) => {
   Note.find({}).then((note) => {
     res.json(note);
-    console.log("succesfull getAll ");
   });
 });
 
