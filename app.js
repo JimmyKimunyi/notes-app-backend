@@ -13,15 +13,14 @@ mongoose.set("strict", true);
 // logger.info("connecting to ", config.MONGODB_URI);
 
 mongoose
-  .connect(
-    "mongodb+srv://jimmykimunyi:A14CRzegVXZbiMCj@cluster0.eeigmpf.mongodb.net/?retryWrites=true&w=majority"
-  )
+  .connect(config.MONGODB_URI)
   .then(() => {
     logger.info("successfull request to mongoDB");
   })
   .catch((error) => {
     next(error);
   });
+
 app.use(cors());
 app.use(express.static("dist"));
 app.use(express.json());

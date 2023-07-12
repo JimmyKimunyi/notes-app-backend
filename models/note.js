@@ -1,9 +1,10 @@
+const config = require("../utils/config");
+
 const mongoose = require("mongoose");
 
 mongoose.set("strict", true);
 
-const url =
-  "mongodb+srv://jimmykimunyi:A14CRzegVXZbiMCj@cluster0.eeigmpf.mongodb.net/?retryWrites=true&w=majority";
+const url = config.MONGODB_URI;
 
 mongoose
   .connect(url)
