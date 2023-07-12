@@ -13,7 +13,9 @@ mongoose.set("strict", true);
 // logger.info("connecting to ", config.MONGODB_URI);
 
 mongoose
-  .connect(config.MONGODB_URI)
+  .connect(
+    "mongodb+srv://jimmykimunyi:A14CRzegVXZbiMCj@cluster0.eeigmpf.mongodb.net/?retryWrites=true&w=majority"
+  )
   .then(() => {
     logger.info("successfull request to mongoDB");
   })
