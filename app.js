@@ -22,7 +22,6 @@ mongoose
   .catch((error) => {
     next(error);
   });
-
 app.use(cors());
 app.use(express.static("dist"));
 app.use(express.json());
