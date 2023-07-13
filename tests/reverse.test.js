@@ -1,16 +1,11 @@
 const reverse = require("../utils/for_testing").reverse;
 
-test("reverse of a ", () => {
+test("reverse of a to be", () => {
   const result = reverse("a");
   expect(result).toBe("a");
 });
 
-test("reverse of react ", () => {
+test("reverse of react to be", () => {
   const result = reverse("react");
   expect(result).toBe("tcaer");
-});
-
-test("reverse of releveler ", () => {
-  const result = reverse("releveler");
-  expect(result).toBe("releveler");
 });

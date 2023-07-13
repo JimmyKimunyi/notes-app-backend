@@ -4,12 +4,10 @@ const reverse = (string) => {
 
 const average = (array) => {
   const reducer = (sum, item) => {
-    return sum + item;
+    return item + sum;
   };
-  return array.length === 0 ? 0 : array.reduce(reducer, 0) / array.length;
+
+  return array.reduce(reducer, 0) / array.length;
 };
 
-module.exports = {
-  reverse,
-  average,
-};
+module.exports = { average, reverse };
