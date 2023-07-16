@@ -9,7 +9,6 @@ const app = express();
 const mongoose = require("mongoose");
 
 mongoose.set("strict", true);
-
 // logger.info("connecting to ", config.MONGODB_URI);
 
 mongoose
