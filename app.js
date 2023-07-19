@@ -14,6 +14,7 @@ mongoose.set("strict", true);
 mongoose
   .connect(config.MONGODB_URI)
   .then(() => {
+    logger.info(typeof config.MONGODB_URI);
     logger.info("successfull request to mongoDB");
   })
   .catch((error) => {
